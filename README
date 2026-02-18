@@ -1,1 +1,44 @@
-High-order finite-difference formulas by Fornberg
+# High-order Finite-Difference Formulas by Fornberg
+
+이 저장소는 **Fornberg 고차 유한차분(High-order Finite Difference) 공식**을 파이썬으로 실험/검증하기 위한 노트북과 데이터를 포함합니다.
+
+## 구성 파일
+
+- `20240926_fornberg.ipynb`
+  - Fornberg 알고리즘 기반의 미분 계수 계산 및 수치 미분 실험 노트북
+- `20240926_fornberg_diagonalization.ipynb`
+  - 고차 유한차분 연산자/행렬 구성 후 대각화(고유값 문제) 관련 실험 노트북
+- `EL_data.txt`
+  - 노트북에서 사용하는 입력 데이터 파일
+
+## 빠른 시작
+
+### 1) 환경 준비
+
+Python 3.9+ 권장
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
+pip install -U pip jupyter numpy scipy matplotlib
+```
+
+### 2) 노트북 실행
+
+```bash
+jupyter notebook
+```
+
+브라우저에서 아래 파일을 열어 실행하세요.
+
+- `20240926_fornberg.ipynb`
+- `20240926_fornberg_diagonalization.ipynb`
+
+## 참고
+
+- Fornberg, B. (1988). *Generation of Finite Difference Formulas on Arbitrarily Spaced Grids*. Mathematics of Computation, 51(184), 699–706.
+
+## 주의사항
+
+- 현재 저장소는 연구/실험용 노트북 중심 구성입니다.
+- 재현 가능한 실행을 위해 셀 실행 순서(위→아래)를 유지하는 것을 권장합니다.
